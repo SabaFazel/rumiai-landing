@@ -19,3 +19,9 @@ export default async function handler(req, res) {
 
   res.status(405).json({ error: 'Method not allowed' });
 }
+// Temporary placeholder for deployment
+export default function handler(req, res) {
+  return res.status(200).json({ message: 'API disabled for deployment.' });
+}
+// import { supabase } from '../../utils/supabaseClient';
+// const { error } = await supabase.from('waitlist').insert([{ email }]);

@@ -1,4 +1,4 @@
-import '@/styles/globals.css'
+import '@/styles/globals.css';
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -8,5 +8,5 @@ export default function App({ Component, pageProps }) {
     AOS.init({ once: true });
   }, []);
 
-  return <Component {...pageProps} />
+  return <Component {...pageProps} />;
 }
